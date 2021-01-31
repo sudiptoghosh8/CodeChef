@@ -1,23 +1,30 @@
-#include <iostream>
+#include<bits/stdc++.h>
+
 using namespace std;
 
-int main() {
-    int a;
-    float b,c,d;
-    cin>>a>>b;
-   if(a%5==0)
-   {
+int main()
 
-    if(a<b)
+{
+   int X;
+
+  float Y,z,n=0;
+   cin>>X>>Y;
+    n=X+0.5;
+    if(n>Y)
     {
-       c= b-a;
-    d=c-0.5;
-    cout<<d<<endl;
+    printf("%f\n",Y);
     }
-
-   }
-   else
-   {cout<<b<<endl;}
-	// your code goes here
-	return 0;
+    else
+    {
+    if(X%5==0)
+    {
+    z=Y-n;
+    printf("%.2f\n",z);
+    }
+    else
+    {
+    printf("%f\n",Y);
+    }
+    }
+    return 0;
 }
